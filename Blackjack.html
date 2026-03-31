@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+            color: white;
+            text-align: center;
+        }
+
+        h1 {
+            margin-top: 40px;
+            font-size: 3rem;
+            color: gold;
+            text-shadow: 2px 2px 5px black;
+        }
+
+        .container {
+            margin: 50px auto;
+            width: 300px;
+            padding: 30px;
+            background: rgba(0, 0, 0, 0.6);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.8);
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin: 10px 0;
+        }
+
+        #message-el {
+            font-style: italic;
+            color: lightgreen;
+        }
+
+        .card-box {
+            background: white;
+            color: black;
+            display: inline-block;
+            padding: 10px 15px;
+            margin: 5px;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        .btn {
+            margin-top: 15px;
+            padding: 10px 20px;
+            font-size: 1rem;
+            border: none;
+            border-radius: 8px;
+            background: gold;
+            color: black;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background: orange;
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body>
+  
+
+    <div class="container">
+        <h1>Blackjack</h1>
+        <p id="message-el">Want to play a round?</p>
+        <br>
+        <p id="card-el">Cards:</p>
+        <br>
+        <p id="sum-el">Sums:</p>
+        <br>
+        <p id="palayer-el">Players:</p>
+
+        <button onclick="startgame()">START GAME</button>
+        <button onclick="newcard()">NEW CARD</button>
+        
+    </div>
+
+    <script src="riya1.js"></script>
+</body>
+</html>
